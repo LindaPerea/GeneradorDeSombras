@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Mukta:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <h1>GENERADOR DE SOMBRAS</h1>
+    <div class="general">
+      <div class="inputs">
+        <div class="box-properties">
+          <h2>Propiedades</h2>
+          <div class="background-color">
+            <label for="color">Color del Cuadro</label>
+            <input type="color" name="color" id="color">
+          </div>
+          <div class="border-radius">
+            <label for="border-radius">Borde Redondo</label>
+            <input type="range" name="border-radius" id="border-radius" min="0" max="100" value="0">
+          </div>
+          <div class="height">
+            <label for="height">Alto</label>
+            <input type="range" name="height" id="height" min="0" max="500" value="0">
+          </div>
+          <div class="width">
+            <label for="width">Ancho</label>
+            <input type="range" name="width" id="width" min="0" max="500" value="0">
+          </div>
+          
+        </div>
+        
+        <div class="shadow">
+            <h2>Personaliza la Sombra</h2>
+            <div class="shadow-color">
+              <label for="shadow-color">Color de Sombra</label>
+              <input class= "input-shadow" type="color" name="shadow-color" id="shadow-color">
+            </div>
+            <div class="horizontal">
+              <label for="">Horizontal</label>
+              <input class= "input-shadow" type="range" name="horizontal" id="horizontal" min="-100" max="+100" value="0">
+            </div>
+            <div class="vertical">
+              <label for="vertical">Vertical</label>
+              <input class= "input-shadow" type="range" name="vertical" id="vertical" min="-100" max="+100" value="0">
+            </div>
+            <div class="blur">
+              <label for="blur">Difuminar</label>
+              <input class= "input-shadow" type="range" name="blur" id="blur" min="0" max="100" value="0">
+            </div>
+            <div class="spread">
+              <label for="spread">Spread</label>
+              <input class= "input-shadow" type="range" name="spread" id="spread" min="-100" max="+100" value="0">
+            </div>
+
+
+        </div>
+        
+        <div class="square-container">
+          
+          <div class="square">
+            <p><b>Copia el Codigo</b></p>
+            <div class="output"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
